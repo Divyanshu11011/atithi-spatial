@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Arrangement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mainStage">Event Hall</div>
+    <div id="uploadSection">
+        <label for="fileInput">Upload your guest's list</label>
+        <input type="file" id="fileInput" accept=".csv, .xlsx">
+    </div>
+    <div id="seatsContainer"></div>
+    <div id="overlay"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
