@@ -70,13 +70,7 @@ function processCSVData(data) {
 }
 
 function showPopup(name) {
-    let popup = document.getElementById('popup');
-    if (!popup) {
-        popup = document.createElement('div');
-        popup.id = 'popup';
-        popup.className = 'popup';
-        document.body.appendChild(popup);
-    }
+    const popup = document.getElementById('popup');
     popup.textContent = name;
     popup.style.display = 'block';
     setTimeout(() => {
